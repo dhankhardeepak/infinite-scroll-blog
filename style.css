@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+    --foreground-color:#fff;
+    --background-color:#a3a3ff;
+
+}
+
+*{
+    font-family: 'rubik', 'sans-serif';
+    font-weight: 400;
+    margin:0;
+    box-sizing: border-box;
+    color:var(--foreground-color);
+}
+.text-center{
+    text-align:center;
+}
+.f500{
+    font-weight: 500;
+}
+.f300{
+    font-weight:300;
+}
+h1{
+    font-size: 26px;
+    font-weight:500;
+}
+h2{
+    font-size: 20px;
+    position:relative;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom:30px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.mainApp{
+    background-color: var(--background-color);
+    min-height: 100vh;
+    padding-bottom:30px;
+}
+.title{
+    padding: 30px;
+}
+.title h1{
+    font-size: 32px;
+    text-shadow: 1px 1px 6px #00000082;
+}
+.filterForm input{
+    min-width: 500px;
+    padding: 11px;
+    /* font-size: 14px; */
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: #000;
+    margin-bottom:30px;
+}
+ul li{
+    background: #b6b6ff;
+    padding: 20px;
+    box-shadow: 0px 1px 9px -5px #000;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    position: relative;
+}
+ul li span{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #000;
+    font-weight: 600;
+}
+.post-title{
+    margin-bottom: 15px;
+    margin-top: 10px
+}
+.post-desc{
+    margin-bottom: 5px;
+}
+#loading{
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+#loading.show{
+    visibility: visible;
+    opacity: 1;
+}
